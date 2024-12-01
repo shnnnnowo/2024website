@@ -1,53 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Red Lantern Design</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="stylesheets/screen.css" type="text/css"/>
-    <title>Document</title>
+    <title>3D Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- 自訂樣式 -->
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <header id="masthead">
-        <h1><img alt="Red Lantern logo" src="images/rl_logo.png" ?></h1>
-        <ul id="nav">
-            <li><a class="active" title="Red Lantern home" href="index.html">home</a></li>
-            <li><a title="Design services" href="services.html">Services</a></li>
-            <li><a title="Our work" href="portfolio.html">portfolio</a></li>
-            <li><a title="Contact Red Lan" href="portfolio.html">Contact</a></li>
-        </ul>
+    <!-- 頂部導航欄 -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Heri4SZN Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">關於我</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">作品展示</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">聯絡我</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 輪播區域 -->
+    <header>
+        <div id="mainCarousel" class="carousel slide vh-100" data-bs-ride="carousel" data-bs-interval="3000">
+            <!-- 輪播的圖片 -->
+            <div class="carousel-inner h-100">
+                <!-- 第一張圖片 -->
+                <div class="carousel-item active h-100">
+                    <img src="assets/images/場景渲染_001 ps.png" class="d-block w-100 h-100 object-fit-cover" alt="作品 1">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center h-100">
+                        <h1 class="display-3 text-light">作品名稱 1</h1>
+                        <p class="lead text-light">這是一段關於作品的描述，可以是亮點或使用技術。</p>
+                    </div>
+                </div>
+                <!-- 第二張圖片 -->
+                <div class="carousel-item h-100">
+                    <img src="assets/images/crazyhouse ps.jpg" class="d-block w-100 h-100 object-fit-cover" alt="作品 2">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center h-100">
+                        <h1 class="display-3 text-light">作品名稱 2</h1>
+                        <p class="lead text-light">這是一段關於作品的描述，可以是亮點或使用技術。</p>
+                    </div>
+                </div>
+                <!-- 第三張圖片 -->
+                <div class="carousel-item h-100">
+                    <img src="assets/images/final_001.jpg" class="d-block w-100 h-100 object-fit-cover" alt="作品 3">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center h-100">
+                        <h1 class="display-3 text-light">作品名稱 3</h1>
+                        <p class="lead text-light">這是一段關於作品的描述，可以是亮點或使用技術。</p>
+                    </div>
+                </div>
+                <!-- 第四張圖片 -->
+                <div class="carousel-item h-100">
+                    <img src="assets/images/NewLevelSequence.0080.png" class="d-block w-100 h-100 object-fit-cover" alt="作品 3">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center h-100">
+                        <h1 class="display-3 text-light">作品名稱 3</h1>
+                        <p class="lead text-light">這是一段關於作品的描述，可以是亮點或使用技術。</p>
+                    </div>
+                </div>
+                <!-- 第五張圖片 -->
+                <div class="carousel-item h-100">
+                    <img src="assets/images/ak4701.png" class="d-block w-100 h-100 object-fit-cover" alt="作品 3">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center h-100">
+                        <h1 class="display-3 text-light">作品名稱 3</h1>
+                        <p class="lead text-light">這是一段關於作品的描述，可以是亮點或使用技術。</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 輪播的控制按鈕 -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">上一張</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">下一張</span>
+            </button>
+        </div>
+        <section id="about" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center">關於我</h2>
+                <p class="text-center">一位熱衷於 3D 建模的藝術家，精通 Blender、Substance Painter。</p>
+            </div>
+        </section>
+
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- 第一頁 -->
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="row text-center">
+                            <div class="col-md-3">
+                                <img src="assets/images/upgrade_001.png" class="img-fluid rounded" alt="作品1">
+                                <p class="text-light mt-2">UPGRADE LOGO</p>
+                            </div>
+                            <div class="col-md-3">
+                                <img src="assets/images/upgrade_0001.png" class="img-fluid rounded" alt="作品2">
+                                <p class="text-light mt-2">UPGRADE STORE</p>
+                            </div>
+                            <div class="col-md-3">
+                                <img src="assets/images/upgrade_0002.png" class="img-fluid rounded" alt="作品3">
+                                <p class="text-light mt-2">UPGRADE STORE</p>
+                            </div>
+                            <div class="col-md-3">
+                                <img src="assets/images/upgrade_0003.png" class="img-fluid rounded" alt="作品4">
+                                <p class="text-light mt-2">UPGRADE STORE</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- 第二頁 -->
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row text-center">
+                            <div class="col-md-3">
+                                <img src="assets/images/your-image5.jpg" class="img-fluid rounded" alt="作品5">
+                                <p class="text-light mt-2">作品名稱 5</p>
+                            </div>
+                            <div class="col-md-3">
+                                <img src="assets/images/your-image6.jpg" class="img-fluid rounded" alt="作品6">
+                                <p class="text-light mt-2">作品名稱 6</p>
+                            </div>
+                            <div class="col-md-3">
+                                <img src="assets/images/your-image7.jpg" class="img-fluid rounded" alt="作品7">
+                                <p class="text-light mt-2">作品名稱 7</p>
+                            </div>
+                            <div class="col-md-3">
+                                <img src="assets/images/your-image8.jpg" class="img-fluid rounded" alt="作品8">
+                                <p class="text-light mt-2">作品名稱 8</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- 可以依此類推增加更多頁 -->
+            </div>
+
+             <!-- 聯絡我 -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2>聯絡我</h2>
+            <p>透過以下方式聯繫我：</p>
+            <a href="mailto:harry930427@gmail.com" class="btn btn-primary">電子郵件</a>
+            <div class="mt-3">
+                <a href="https://www.instagram.com/heri4szn/" target="_blank">Instagram</a>
+            </div>
+        </div>
+    </section>
+        
+            <!-- 輪播控制按鈕 -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="col-sm-6 col-md-3">...</div>
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+
+        
     </header>
-    <article id="mainContent">
-        <section id="titleBar">
-            <img alt="tokyo buildings" src="images/tokyo.jpg" />
-            <h1>Red Lantern builds unique interfaces <span class="amp">&amp;</span> user experience
-            </section>
-            <section id="content">
-                <h2>Welcome to the new red Lantern Design</h2>
-                <p>Red Lantern is a small web design and consulting firm specializing in standards-base 
-                    Our goal is to build simple,beautiful webpages that make your information easy tokyo
-                <p>if you or your company is interested in working with us ,please check out our portfor
-                    work and contact us with your project details.We look forward to hearing from you on
-                    the web a little simpler and easier to find.</p>
-                <ul id="link-list">
-                    <li><a title="View our portfolio" href="#">view our fall portfolio</a><li>
-                    <li><a title="Contact red Lantern" href="#">Contact Red Lantern</a><li>
-                </ul>
-            </section>  
-            <section id="sidebar">
-                <h2>Our work</h2>
-                <ul id="port">
-                    <li><img alt="comp0" src="images/markinjapan.jpg" /></li>
-                    <li><img alt="comp1" src="images/a2g.jpg" /></li>
-                    <li><img alt="comp2" src="images/foobar.jpg" /></li>
-                    <li><img alt="comp3" src="images/rpm.jpg" /></li>
-                </ul>
-                </section>
-            </article>
-            <footer id="foobar">
-                <p>Copyright &copy; Red Lantern Design,all rights reserved.</p>
-            </footer>
-            </body>
+    <!-- 引入 Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>

@@ -1,0 +1,56 @@
+/* 確保圖片填滿區域並保持比例 */
+.object-fit-cover {
+    object-fit: cover;
+}
+
+/* 輪播文字樣式 */
+.carousel-caption h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.carousel-caption p {
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+/* 自訂控制按鈕的大小 */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.carousel-item {
+    background-color: #1a1a1a; /* 深色背景 */
+    padding: 30px 0;
+}
+
+.carousel-item img {
+    transition: transform 0.3s ease;
+}
+
+.carousel-item img:hover {
+    transform: scale(1.1); /* 滑鼠懸停時放大 */
+}
+
+.text-light {
+    color: #f0f0f0; /* 文字顏色 */
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+/* 響應式設計 - 適配手機 */
+@media (max-width: 576px) {
+    .carousel-caption h1 {
+        font-size: 2rem; /* 縮小文字大小 */
+    }
+
+    .carousel-caption p {
+        font-size: 1rem;
+    }
+}
