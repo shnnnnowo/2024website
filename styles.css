@@ -43,8 +43,12 @@
     font-weight: 500;
 }
 
+footer {
+    background-image: url('assets/images/大理石背景.jpg');
 
-/* 響應式設計 - 適配手機 */
+}
+
+/* 響應式設計*/
 @media (max-width: 576px) {
     .carousel-caption h1 {
         font-size: 2rem; /* 縮小文字大小 */
