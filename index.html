@@ -20,13 +20,22 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">關於我</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#portfolio">作品展示</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#more-info">關於我</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#myart">作品展示</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">聯絡我</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+
+    <div class="video-container">
+        <video width="100%" height="auto" controls autoplay>
+            <source src="assets/images/finalcave - Converted with FlexClip.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        
+    </div>
+    
 
     <!-- 輪播區域 -->
     <header>
@@ -38,7 +47,7 @@
                     <img src="assets/images/場景渲染_001 ps.png" class="d-block w-100 h-100 object-fit-cover" alt="作品 1">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center h-100">
                         <h1 class="display-3 text-light">NEW NEON TOKYO</h1>
-                        <p class="lead text-light"></p>
+                        <p class="lead text-light">JR鶯谷駅</p>
                     </div>
                 </div>
                 <!-- 第二張圖片 -->
@@ -84,12 +93,117 @@
                 <span class="visually-hidden">下一張</span>
             </button>
         </div>
-        <section id="about" class="py-5 bg-light">
-            <div class="container">
-                <h2 class="text-center">關於我</h2>
-                <p class="text-center">個人3D作品集</p>
-            </div>
-        </section>
+
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parallax Scrolling with Text</title>
+  <style>
+    /* 通用樣式 */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    /* 滾動視差圖片區 */
+    .parallax-section {
+      position: relative;
+      height: 100vh; /* 全螢幕高度 */
+      background: url('assets/images/第22組 Broqué.jpg') no-repeat center center/cover;
+      background-attachment: fixed; /* 使背景圖片固定滾動 */
+    }
+
+    /* 視差文字區域 */
+    .parallax-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+      background: rgba(0, 0, 0, 0.5); /* 半透明背景 */
+      padding: 20px 40px;
+      border-radius: 10px;
+    }
+
+    .parallax-content h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .parallax-content p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    .parallax-content a {
+      display: inline-block;
+      text-decoration: none;
+      color: white;
+      background: #3b83f7; /* 按鈕顏色 */
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 1.1rem;
+      transition: background 0.3s ease;
+    }
+
+    .parallax-content a:hover {
+      background: #00CED1; /* 懸停效果顏色 */
+    }
+
+    /* 普通內容區 */
+    .normal-section {
+      padding: 80px 20px;
+      background: #f4f4f4;
+      text-align: center;
+    }
+
+    .normal-section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .normal-section p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- 第一區段 (視差效果) -->
+  <section class="parallax-section">
+    <div class="parallax-content">
+      <h1>HERI4SZN</h1>
+      <p>INS:heri4szn</p>
+      <a href="#more-info">關於我</a>
+    </div>
+  </section>
+
+  <!-- 普通內容區 -->
+  <section class="normal-section" id="more-info">
+    <h2>關於我</h2>
+    <p>這是我的個人作品集網站， 主要放3D相關的作品</p>
+    <p>軟體技能:Blender、SP、Unreal engine5、MD、Zbrush</p>
+  </section>
+
+ <!-- 第二區段 (視差效果) -->
+ <section class="parallax-section" id="myart">
+    <div class="parallax-content">
+      <h1>Broqué時裝周</h1>
+      <p></p>
+      <a href="work-introduction.html" class="btn" target="_blank">查看更多作品</a>
+    </div>
+  </section>
+</body>
+</html>
 
         <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -133,9 +247,29 @@
                                 <img src="assets/images/IMG_2978.JPG" class="img-fluid rounded" alt="作品7">
                                 <p class="text-light mt-2"></p>
                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 第三頁 -->
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row text-center">
                             <div class="col-md-3">
-                                <img src="assets/images/your-image8.jpg" class="img-fluid rounded" alt="作品8">
-                                <p class="text-light mt-2">作品名稱 8</p>
+                                <img src="assets/images/場景渲染_001 ps.png" class="img-fluid rounded" alt="作品8">
+                                <p class="text-light mt-2"></p>
+                            </div>
+                            <div class="col-md-3">
+                                <img src="assets/images/渲染003 ps.png" class="img-fluid rounded" alt="作品9">
+                                <p class="text-light mt-2"></p>
+                            </div>
+                            <div class="col-md-3">
+                                <img src="assets/images/場景白模.png "class="img-fluid rounded" alt="作品10">
+                                <p class="text-light mt-2"></p>
+                            </div>
+                            <div class="col-md-3">
+                                <img src="assets/images/場景線圖.png"class="img-fluid rounded" alt="作品11">
+                                <p class="text-light mt-2"></p>
                             </div>
                         </div>
                     </div>
