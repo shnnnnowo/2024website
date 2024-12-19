@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="styles.css">
     <style>
     </style>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 </head>
 <body>
     <!-- 頂部導航欄 -->
@@ -41,21 +43,72 @@
         <img src="assets/images/man.png" id="man">
         <img src="assets/images/plants.png" id="plants">
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
     <script>
-        gsap.form("#m1",{
-            scrollTeigger:{
-                scrub:true
-            },
-            y:100,
-        })
-        gsap.form("#m2",{
-            scrollTeigger:{
-                scrub:true
-            },
-            y:50,
-        })
+        gsap.from("#m1", {
+        y: 500, // 初始位置
+        scrollTrigger: {
+            trigger: "#m1", // 觸發點
+            start: "top bottom", // 開始動畫的位置
+            end: "bottom top", // 結束動畫的位置
+            scrub: true, // 平滑滾動
+        },
+    });
+
+    gsap.from("#m2", {
+        y: 500, // 初始位置
+        scrollTrigger: {
+            trigger: "#m2", // 觸發點
+            start: "top bottom", // 開始動畫的位置
+            end: "bottom top", // 結束動畫的位置
+            scrub: true, // 平滑滾動
+        },
+    });
+    gsap.from("#t2", {
+        x: -500, // 初始位置
+        scrollTrigger: {
+            trigger: "#t2", // 觸發點
+            start: "top bottom", // 開始動畫的位置
+            end: "bottom top", // 結束動畫的位置
+            scrub: true, // 平滑滾動
+        },
+    });
+    gsap.from("#t1", {
+        x: -800, // 初始位置
+        scrollTrigger: {
+            trigger: "#t1", // 觸發點
+            start: "top bottom", // 開始動畫的位置
+            end: "bottom top", // 結束動畫的位置
+            scrub: true, // 平滑滾動
+        },
+    });
+    gsap.from("#man", {
+        x: -700, // 初始位置
+        scrollTrigger: {
+            trigger: "#man", // 觸發點
+            start: "top bottom", // 開始動畫的位置
+            end: "bottom top", // 結束動畫的位置
+            scrub: true, // 平滑滾動
+        },
+    });
+    gsap.from("#plants", {
+        x: -700, // 初始位置
+        scrollTrigger: {
+            trigger: "#plants", // 觸發點
+            start: "top bottom", // 開始動畫的位置
+            end: "bottom top", // 結束動畫的位置
+            scrub: true, // 平滑滾動
+        },
+    });
+    gsap.from("#text", {
+        x: 3500, // 初始位置
+        scrollTrigger: {
+            trigger: "#text", // 觸發點
+            start: "top bottom", // 開始動畫的位置
+            end: "bottom top", // 結束動畫的位置
+            scrub: true, // 平滑滾動
+        },
+    });
     </script>
 
 
