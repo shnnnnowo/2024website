@@ -1,3 +1,37 @@
+.navbar-brand{
+    color: #e5e5e5;
+    font-weight: 800;
+    font-size :2em;
+    text-decoration:none;
+}
+
+.parallax
+{
+    position: relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+.parallax img
+{
+    position: absolute;
+    bottom:0;
+    left:0;
+    width: 100%;
+    pointer-events: none;
+}
+
+#text
+{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    font-size: 4em;
+    font-weight: 700;
+    color: #112434;
+}
+
 /* 讓影片充滿整個螢幕並居中 */
 .video-container {
     position: relative;
@@ -65,6 +99,26 @@ footer {
     background-image: url('assets/images/大理石背景.jpg');
 
 }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+section {
+    background: linear-gradient(to right, #f0f0f0, #cccccc);
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+  
+
 
 /* 響應式設計*/
 @media (max-width: 576px) {

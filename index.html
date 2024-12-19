@@ -31,6 +31,34 @@
         </div>
     </nav>
 
+    
+    <section class="parallax">
+        <h2 id="text">Heri4SZN 3D</h2>
+        <img src="assets/images/monutain_01.png" id="m1">
+        <img src="assets/images/trees_02.png" id="t2">
+        <img src="assets/images/monutain_02.png" id="m2">
+        <img src="assets/images/trees_01.png" id="t1">
+        <img src="assets/images/man.png" id="man">
+        <img src="assets/images/plants.png" id="plants">
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.form("#m1",{
+            scrollTeigger:{
+                scrub:true
+            },
+            y:100,
+        })
+        gsap.form("#m2",{
+            scrollTeigger:{
+                scrub:true
+            },
+            y:50,
+        })
+    </script>
+
+
     <div class="video-container">
         <div class="container">
             <video autoplay muted loop>
