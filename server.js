@@ -19,11 +19,13 @@ var ProfolioDB = DB.create(__dirname+"/profolio.db");
 var ContactDB = DB.create(__dirname+"/contact.db");
  
 
-ProfolioDB.insert([
+/*ProfolioDB.insert([
      { modal: "#card1", imgSrc: "assetss/第22組 Broqué.jpg"},
     { modal: "#card2", imgSrc: "assetss/YOOOOLLO.jpg"},
     { modal: "#card3", imgSrc: "assetss/HOUSE PPS.png"},
  ])
+*/
+
 
 /*server.get("/services", (req, res)=>{
     //DB find
