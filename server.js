@@ -6,7 +6,7 @@ var server = express();
 var path= require("path");
 
 //web root
-server.use(express.static(__dirname));
+server.use(express.static(__dirname+"/myserver"));
 server.use(express.json());
 server.use(express.urlencoded({extended:true}));
 
@@ -36,7 +36,7 @@ var ContactDB = DB.create(__dirname+"/contact.db");
     res.send(Services);
 });*/
 
-server.get("/profolio", (req,res)=>{
+server.get("/myserver", (req,res)=>{
       //DB
       ProfolioDB.find({}).then(results=>{
         if(results != null){
@@ -52,8 +52,8 @@ server.post("/contact_me", (req,res)=>{
      res.redirect("/#contact");
 })
 
-server.listen(6060, ()=>{
-    console.log("Server is running at port 6060.");
+server.listen(7070, ()=>{
+    console.log("Server is running at port 7070.");
 })
 
 server.get('/', (req, res) => {

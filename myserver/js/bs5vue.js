@@ -8,7 +8,7 @@ var card = Vue.createApp({
     mounted() {
         // 使用 jQuery 的 $.ajax 發送請求
         $.ajax({
-            url: "/profolio", // API 路徑
+            url: "/myserver", // API 路徑
             method: "GET",    // HTTP 方法
             dataType: "json", // 資料格式
             success: (results) => {
