@@ -1,0 +1,449 @@
+1.color:#fff;將文字顏色設置為白色(#fff)，但此處有一個錯誤字符{口}，應將其去除。 
+
+2.text-decoration:none;移除了超連結的默認下劃線。 
+
+3.padding-top:5px;為超連結的上方設置了5px的內邊距，讓文本看起來有一些差距。 
+
+4.height:30px;設置了超連結的高度為30px，控制每個選單項的高度。 
+
+5.width:90px;設置寬度為90px，控制選單項的寬度。 
+
+6.margin-left:3px;將容器的左側邊距設置為3px，使選單略微向右偏移。 
+
+7.width   ul針對選單內的ul(無序列表)。 
+
+8.list-style:none;移除了無序列表項(li)的預設圓點或項目符號。 
+
+0920 課堂筆記 
+
+HTML 5 是用來建構網頁的語言，用「標籤」來描述網頁的各種內容，比如文字段落、圖片、標題等等。 
+
+<!DOCTYPE html> 
+
+開頭的這行代碼是在告訴瀏覽器，這是一個 HTML5 文件。 
+
+<html> 
+
+整個網頁的根元素，所有內容都包在裡面。 
+
+<head> 
+
+放一些網頁的「背景資訊」，例如標題、描述、字體設定等等。這些東西不會直接顯示在頁面上。 
+
+<title>：設置瀏覽器標籤的名稱。 
+
+<meta>：提供一些資訊，比如讓網頁適應手機屏幕的大小 (viewport)。 
+
+<body> 
+
+所有你在網頁上看得到的東西都放這裡，比如圖片、文字、按鈕。 
+
+<header> 
+
+定義網頁的「頭部區域」，通常放導覽列或介紹內容。要放在 <body> 裡才會顯示。 
+
+<article> 
+
+用來包裝獨立的內容單元，像是部落格文章。在裡面可以用 <img> 加圖片。 
+
+小提醒： 
+
+超連結寫法：<a href="網址">連結文字</a>。 
+
+id 只能在網頁中唯一，class 可以重複用。用 CSS 時，id 前加 #，class 前加 .。 
+
+ 
+
+0927課堂筆記 
+
+網頁基本結構 
+
+Meta name 的用途 
+
+就是設定關鍵字，讓別人搜尋時可以找到你的網站。 
+
+響應式網頁 
+
+簡單說就是讓網頁可以在不同裝置上（手機、平板、電腦）看起來都正常。 
+
+ 
+
+ 
+
+網頁結構大概分這幾個區塊： 
+
+主內容區 (main) 
+
+用 <div id="main"> 開頭，這裡通常會放主標題，可以是圖片或文字。 
+
+背景 
+
+可以選圖片或純色字，根據網站風格來決定。 
+
+選單 (menu) 
+
+用 <div id="menu"> 包起來，裡面放一些導航的內容。 
+
+主要內容 
+
+主要內容可以用 <div> 或 <article>，像是文章、圖片什麼的都可以放。 
+
+頁腳 (footer) 
+
+用 <footer id="footer"> 定義，通常放版權資訊或聯絡方式。 
+
+ 
+
+ 
+
+常見的標籤： 
+
+<div> 
+
+基本的區塊標籤，沒有特別意義，但很好用，常拿來分區域。 
+
+<header> 
+
+定義網站的頭部區域，像是放 LOGO、標題、導航列這些。 
+
+<article> 
+
+這個是放文章或獨立內容用的，像部落格文章之類的，裡面可以用 <img> 放圖片。 
+
+ 
+
+1004課堂筆記 
+
+CSS網頁設計筆記 
+
+ 
+
+ 
+
+選單樣式設定 
+
+css 
+
+#menu { 
+
+  width: 674px; 
+
+  background: linear-gradient(#333, #909); /* 背景是深灰到淺灰的漸層 */ 
+
+  margin-left: 3px; /* 左邊稍微往右推一點 */ 
+
+} 
+
+  
+
+#menu ul { 
+
+  list-style: none; /* 去掉列表的圓點符號 */ 
+
+} 
+
+  
+
+#menu ul li { 
+
+  display: inline; /* 讓列表項變成一排 */ 
+
+} 
+
+  
+
+#menu ul li a { 
+
+  color: #fff; /* 字的顏色是白色 */ 
+
+  text-decoration: none; /* 去掉超連結的底線 */ 
+
+  padding-top: 5px; /* 上方留點距離，看起來舒服一點 */ 
+
+  height: 30px; /* 每個按鈕高 30px */ 
+
+  width: 90px; /* 每個按鈕寬 90px */ 
+
+  float: left; /* 讓按鈕靠左排列 */ 
+
+  display: block; /* 把按鈕範圍變成一個完整的區塊 */ 
+
+  text-align: center; /* 字放正中間 */ 
+
+} 
+
+ 
+
+#menu 是主容器 
+
+控制選單的寬度、背景、外邊距等。 
+
+ul 代表無序列表 
+
+記得用 list-style: none; 移除小圓點。 
+
+li 是選單項目 
+
+改成 display: inline; 就可以讓它們排成一條線。 
+
+a 是超連結 
+
+加 text-decoration: none; 讓它沒有底線，看起來更乾淨。 
+
+ 
+
+HTML 程式筆記 
+
+HTML 基本結構 
+
+這是網頁的最基本樣子，所有 HTML 文件都會有這個結構。 
+
+<!DOCTYPE html> 
+
+<html lang="en"> 
+
+<head> 
+
+  <meta charset="UTF-8"> 
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <title>我的網站</title> 
+
+</head> 
+
+<body> 
+
+  <header> 
+
+    <h1>歡迎來到我的網站</h1> 
+
+  </header> 
+
+  <main> 
+
+    <p>這是主內容區，放一些有趣的東西。</p> 
+
+  </main> 
+
+  <footer> 
+
+    <p>這是網站的頁腳</p> 
+
+  </footer> 
+
+</body> 
+
+</html> 
+
+ 
+
+CSS 程式筆記 
+
+基礎 CSS 設定 
+
+控制整個網頁的樣式，讓它看起來沒那麼無聊。 
+
+body { 
+
+  font-family: Arial, sans-serif; 
+
+  line-height: 1.6; 
+
+  margin: 0; 
+
+  padding: 0; 
+
+  background-color: #f4f4f4; 
+
+} 
+
+  
+
+header { 
+
+  background-color: #333; 
+
+  color: #fff; 
+
+  padding: 10px 0; 
+
+  text-align: center; 
+
+} 
+
+  
+
+main { 
+
+  padding: 20px; 
+
+} 
+
+  
+
+footer { 
+
+  background-color: #333; 
+
+  color: #fff; 
+
+  text-align: center; 
+
+  padding: 10px 0; 
+
+  position: fixed; 
+
+  bottom: 0; 
+
+  width: 100%; 
+
+} 
+
+ 
+
+Bootstrap 5 程式筆記 
+
+安裝 Bootstrap 5 
+
+直接用 CDN，快速又方便： 
+
+<head> 
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"> 
+
+</head> 
+
+ 
+
+滾動視差 (Parallax) 程式筆記 
+
+ 
+
+<div class="parallax"></div> 
+
+<div style="height: 100vh; background: white; text-align: center;"> 
+
+  <h2>普通內容區</h2> 
+
+</div> 
+
+<div class="parallax"></div> 
+
+ 
+
+CSS 部分 
+
+讓背景跟著滾動，營造視差效果： 
+
+ 
+
+.parallax { 
+
+  background-image: url('https://via.placeholder.com/1920x1080'); 
+
+  height: 100vh; 
+
+  background-attachment: fixed; 
+
+  background-position: center; 
+
+  background-repeat: no-repeat; 
+
+  background-size: cover; 
+
+} 
+
+ 
+
+資料庫程式筆記 
+
+連接 MySQL (PHP) 
+
+用 PHP 跟資料庫溝通： 
+
+<?php 
+
+$host = "localhost"; 
+
+$user = "root"; 
+
+$password = ""; 
+
+$dbname = "my_database"; 
+
+  
+
+$conn = new mysqli($host, $user, $password, $dbname); 
+
+  
+
+if ($conn->connect_error) { 
+
+  die("連接失敗：" . $conn->connect_error); 
+
+} 
+
+  
+
+echo "連接成功！"; 
+
+?> 
+
+ 
+
+Vue.js 程式筆記 
+
+安裝 Vue.js 
+
+用 CDN 超方便： 
+
+<script src="https://cdn.jsdelivr.net/npm/vue@3"></script> 
+
+ 
+
+基本範例 
+
+<div id="app"> 
+
+  <h1>{{ message }}</h1> 
+
+  <button @click="reverseMessage">反轉文字</button> 
+
+</div> 
+
+  
+
+<script> 
+
+  const app = Vue.createApp({ 
+
+    data() { 
+
+      return { 
+
+        message: 'Hello, Vue!' 
+
+      }; 
+
+    }, 
+
+    methods: { 
+
+      reverseMessage() { 
+
+        this.message = this.message.split('').reverse().join(''); 
+
+      } 
+
+    } 
+
+  }); 
+
+  
+
+  app.mount('#app'); 
+
+</script> 
+
+ 
